@@ -31,20 +31,15 @@
 
 def fix_machine(debris, product):
     ### WRITE YOUR CODE HERE ###
-    n = 0
+    n = len(product)
     p = 0
-    while product.find()
-    while p != -1:
-        p =  debris.find(product[n])
-        n += 1
-        while p == -1:
-            if product.find(product[n-1]) == product[::-1][0]:
-                return product
-            else:
-                return "Give me something that's not useless next time."
-
-
-
+    while p != -1 & n != 0:
+        n -= 1
+        p = debris.find(product[n])
+    if p != -1 & n == 0:
+        return product
+    else:
+        return "Give me something that's not useless next time."
 
 
 ### TEST CASES ###
